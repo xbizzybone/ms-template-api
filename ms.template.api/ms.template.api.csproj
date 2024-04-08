@@ -4,13 +4,20 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aaaed0b6-dcfa-40f0-b290-20e7fffe6b14</UserSecretsId>
+    <UserSecretsId>a35c94dd-3ee7-4d01-b819-90160bcdf89e</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Serilog.Builder" Version="1.4.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ms.template.features.users\ms.template.features.users.csproj" />
+    <ProjectReference Include="..\ms.template.shared.logger\ms.template.shared.logger.csproj" />
   </ItemGroup>
 
 </Project>
