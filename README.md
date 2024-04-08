@@ -1,0 +1,1 @@
+# Solution ms.template.api
